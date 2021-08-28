@@ -1,0 +1,161 @@
+
+/*--------------navbar-----------------*/
+
+.cntct-opt:hover{
+    background-color: rgb(1, 99, 1);
+}
+.cntct-opt{
+    display:none;
+    height: 40px;
+    width:100% ;
+    padding:0;
+    margin:0;
+    background:green;
+}
+
+/*--------------Eingabe-----------------*/
+*{
+    box-sizing: border-box;
+}
+#nextBtn:active,
+#nextBtn:focus,
+#nextBtn {
+    border-radius: 4px;
+    background-color:#9c0f1f;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width:150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+#nextBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#nextBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#nextBtn:hover span {
+    padding-right: 25px;
+}
+
+#nextBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+#beschr{
+    height: 200px;
+}
+input{
+    /*font-size: 0.8em;*/
+    background-color: white;
+    color:#231003;
+}
+body{
+    background-color: white 
+}
+.logo- {
+    height: 400px;
+    background: url('../../img/logo1.png')no-repeat;
+    background-size: contain;
+
+}
+.opt-bx{
+    display: none;
+    width: 200px;
+}
+#regForm:hover{
+box-shadow:
+            0 0 5px #6F160C,
+            0 0 1px #6F160C,       
+            0 0 2px  #c89f69,
+            0 0 10px   #6F160C;
+            transition:200ms;
+}
+#regForm {
+    transition:900ms;
+    background-color: #ffffffa4;
+    border: 1px solid #c89f69;
+    margin: 10px auto;
+    font-family: Raleway;
+    padding: 10px;
+    width: 95%;
+    height: 700px;
+    min-width: 300px;
+    border-radius: 30px;
+    
+}
+h1 {
+    text-align: center;  
+}
+.tab input {
+    border: 0.7px solid #c89f69;
+    border-radius: 7px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+input.invalid {
+    background-color: #ffdddd;
+}
+.tab {
+    display: none;
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+button {
+    color:#9c0f1f;
+    background-color:#231003 ;
+    color: #c89f69;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    border: 1px solid #231003;
+}
+button:hover {
+    opacity: 0.8;
+    translate: 1s;
+    border: 1px solid #c89f69;
+}
+#prevBtn {
+    background-color: #bbbbbb;
+    margin-left: 0;
+    color: #231003
+}
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #231003;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+}
+.step.active {
+    background-color: #9c0f1f;
+    opacity: 1;
+}
+.step.finish {
+    background-color: green;
+}
